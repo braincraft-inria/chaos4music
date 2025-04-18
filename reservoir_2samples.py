@@ -13,12 +13,12 @@ x = np.random.randn(100)
 
 print(res.call(x))
 
-samplerate, kick = wav.read("808_drum_kit/kicks/808-Kicks01.wav")
-sr, snare = wav.read("808_drum_kit/snares/808-Clap01.wav")
+samplerate, kick = wav.read("samples/808_drum_kit/kicks/808-Kicks01.wav")
+sr, snare = wav.read("samples/808_drum_kit/snares/808-Clap01.wav")
 samples = [kick, snare]
 
 
-for _ in range(10):
+for _ in range(16):
 
     output = res.call(x)
 
@@ -28,9 +28,3 @@ for _ in range(10):
 
     sd.play(samples[sound], samplerate)
     sd.wait()
-
-
-
-
-
-
