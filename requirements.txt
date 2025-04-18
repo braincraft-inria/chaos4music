@@ -1,1 +1,3 @@
 reservoirpy
+sounddevice
+scipy
