@@ -15,8 +15,8 @@ Pour installer l'environnement de développement et les dépendances nécessaire
 ### Création de l'environnement virtuel
 
 ```
-python -m venv music_venv
-source music_venv/bin/activate
+python -m venv musicvenv
+source musicvenv/bin/activate
 ```
 
 ### Installation des dépendances
@@ -25,9 +25,22 @@ source music_venv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Préparation des fichiers sons
+```
+cd samples
+unzip OneShots-24bit-WAV.zip
+unzip 808_drum_kit.zip
+cd ..
+```
+
 ## Utilisation
 
 Après avoir configuré l'environnement, vous pouvez lancer le projet et expérimenter avec le réservoir. L'application lira les samples disponibles et, en fonction des paramètres du réservoir, sélectionnera le sample à jouer, vous permettant ainsi d'explorer des combinaisons sonores inédites et chaotiques.
+
+En laissant ce code vous allez créer un réservoir qui va générer 16 notes en utilisant 2 samples (deux échantillons de son) :
+```
+python reservoir_2samples.py
+```
 
 ## Contribuer
 
@@ -36,4 +49,3 @@ Les contributions sont les bienvenues ! N'hésitez pas à soumettre des issues
 ---
 
 Plongez dans le chaos musical et laissez le réservoir guider vos découvertes sonores !
-

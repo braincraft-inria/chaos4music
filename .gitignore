@@ -1,6 +1,15 @@
 music_venv/
+musicvenv/
+
+# sound files
 samples/OneShots\ (24bit WAV)/
 samples/808_drum_kit/
+*.wav
+*.mp3
+
+
+# Mac OS X files
+*__MACOSX
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
